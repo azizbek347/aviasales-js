@@ -1,0 +1,61 @@
+.tickets {
+  margin: 20px 0;
+  list-style: none;
+  padding: 0;
+  flex-grow: 1;
+  &__el {
+    border-radius: 5px;
+    background-color: $white;
+    padding: 20px;
+    box-shadow: 0 2px 8px 0 rgba($black, 0.1);
+  }
+}
+
+.ticket {
+  &:not(:last-of-type) {
+    margin: 20px 0;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 36px;
+  }
+
+  &__price {
+    margin: 0;
+    @include fontSet($primary500, null, normal normal 600 2.4rem/1 $fontFamily);
+  }
+
+  &__carrier-logo {
+  }
+
+  &__segment:not(:last-of-type) {
+    margin: 20px 0 10px;
+  }
+}
+.segment {
+  display: flex;
+  justify-content: space-between;
+  &__part {
+    max-width: 140px;
+    flex: 1 0 100%;
+    p {
+      margin: 0;
+      font-size: 1.4rem;
+      &:first-of-type {
+        color: $secondaryContent;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.warning-text {
+  color: $red;
+  height: 100%;
+  margin: 75px 50px;
+  font-size: 2em;
+  text-align: center;
+}

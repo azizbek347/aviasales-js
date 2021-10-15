@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  padding: 50px;
+  &__link {
+    margin: 0 auto;
+  }
+  &__logo {
+    display: block;
+    object-fit: cover;
+    max-width: 60px;
+    max-height: 60px;
+  }
+}

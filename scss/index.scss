@@ -1,0 +1,30 @@
+@import "utils";
+
+:root {
+  font: normal normal 600 62.5%/2 $fontFamily;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $mainBgColor;
+  @include fontSet(
+    $primaryContent,
+    0.5px,
+    normal normal 600 1.2rem/1.5 $fontFamily
+  );
+}
+
+.wrapper {
+  max-width: 750px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@import "loader";
+@import "header";
+@import "main";

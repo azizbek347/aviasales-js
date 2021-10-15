@@ -1,0 +1,27 @@
+.tabs {
+  display: flex;
+  &__link {
+    background: $white;
+    line-height: 1.5;
+    padding: 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    flex: 1 0 auto;
+    border: 1px solid $borderColor;
+    transition: 0.4s ease;
+    cursor: pointer;
+    box-shadow: 0 2px 8px 0 rgba($black, 0.1);
+    &:first-of-type {
+      border-radius: 5px 0 0 5px;
+    }
+    &:last-of-type {
+      border-radius: 0 5px 5px 0;
+    }
+    &.active-tab {
+      border-color: $primary500;
+      background-color: $primary500;
+      color: $white;
+    }
+  }
+}

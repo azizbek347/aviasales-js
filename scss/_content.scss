@@ -1,0 +1,9 @@
+.content {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+@import "tabs";
+@import "tickets";

@@ -1,0 +1,24 @@
+$white: #fff;
+$black: #000;
+
+$red: #ff1020;
+$mainBgColor: #f3f7fa;
+$hoverBgColor: #f1fcff;
+
+$primary500: #2196f3;
+$primaryContent: #4a4a4a;
+$secondaryContent: #a0b0b9;
+
+$borderColor: #dfe5ec;
+
+$fontFamily: "Open Sans", sans-serif;
+
+@mixin fontSet($color, $ltrSpcVal, $args...) {
+  @if $color!=null {
+    color: $color;
+  }
+  @if $ltrSpcVal!=null {
+    letter-spacing: $ltrSpcVal;
+  }
+  font: $args;
+}
